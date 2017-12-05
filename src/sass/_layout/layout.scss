@@ -1,0 +1,63 @@
+nav {      
+    clear: both;
+}
+
+.main {  
+     
+    .header { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 30px;
+        height: 40vh;
+        
+         &.no-margin-bottom {
+             margin-bottom: 0;              
+         }
+         
+         &.front {
+              height: 60vh;
+         }
+         
+         &.projects {
+              height: auto;
+         }
+         
+         .page-header {
+             border-bottom: 0;
+         }
+    }
+     
+    .content {
+         
+        .cards {
+            display: block;
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+     
+    .sidebar {        
+        .s-content {
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+ 
+    .footer {
+        clear: both;
+        
+         .copyright { 
+             height: 150px;
+             display: flex;
+             flex-direction: column;
+             align-content: left;
+             justify-content: center;
+         }
+    }
+}

@@ -1,0 +1,373 @@
+
+/****************
+ * Base
+ ****************/
+
+body {
+    background-color: #fcfcfc;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/****************
+ * Layout
+ ****************/
+
+.main {
+    
+    .header { 
+        background-color: #0D0912;
+        color: #fcfcfc;
+         
+         .page-header {
+              
+              h1.title {
+                 font-weight: 600;                   
+              }
+              .subtitle { 
+                 font-size: 24px;
+                 font-weight: 100;
+              } 
+          
+         }
+    }
+    
+    .content {
+         
+    }
+     
+    .sidebar { 
+    }
+ 
+    .footer {
+        background-color: #0D0912;
+        color: #fcfcfc; 
+    }
+}
+
+/****************
+ * Modules
+ ****************/
+nav {
+    
+    &.navbar {  
+         background-color: #0D0912; 
+         margin-bottom: 0;
+         
+        .navbar-brand { 
+             background-color: #FB1D5E;    
+             .logo { }
+        }
+     
+         ul.navbar-nav {
+              color: #ffffff; 
+              li {                    
+                   color: #ffffff;
+                   font-size: 22px;
+                   font-weight: 100;
+                   
+                   a {
+                        background-color: transparent;
+                        color: #ffffff;
+                        &:hover {                   
+                             background-color: transparent;
+                             color: #FB1D5E;
+                             transition: color .5s fade;
+                        }
+                        &.active {                   
+                             background-color: transparent;
+                             color: #FB1D5E;
+                        }
+                   }                 
+              }
+         }
+         
+         .navbar-toggle {
+              .icon-bar {
+                   background-color: #FB1D5E; 
+              }
+         }
+         
+    }
+}
+
+
+
+/**
+ * Buttons Colors 
+ */
+
+
+.btn-cta {
+     
+     &.green-on { 
+         color: #0D0912;
+         background-color: #3AFFA1;
+         border: 2px solid #3AFFA1;
+         box-shadow: 0 0 40px 40px #3AFFA1 inset;
+         transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #0D0912;
+              background-color: #3AFFA1;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px #3AFFA1 inset;
+              transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.green-off { 
+         color: #3AFFA1;
+         background-color: transparent;
+         border: 2px solid #3AFFA1; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #0D0912;
+              background-color: #3AFFA1;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px #3AFFA1 inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.green-onoff { 
+         color: #0D0912;
+         background-color: #3AFFA1;
+         border: 2px solid #3AFFA1; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #3AFFA1;
+              background-color: transparent;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.purple-on { 
+         color: #FFFFFF;
+         background-color: #8700FB;
+         border: 2px solid #8700FB;
+         box-shadow: 0 0 40px 40px #8700FB inset;
+         transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #8700FB;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px #8700FB inset;
+              transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.purple-off { 
+         color: #8700FB;
+         background-color: transparent;
+         border: 2px solid #8700FB; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #8700FB;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px #8700FB inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.purple-onoff { 
+         color: #FFFFFF;
+         background-color: #8700FB;
+         border: 2px solid #8700FB; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: transparent;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.red-on { 
+         color: #FFFFFF;
+         background-color: #FB1D5E;
+         border: 2px solid #FB1D5E;
+         box-shadow: 0 0 40px 40px #FB1D5E inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #FB1D5E;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.red-off { 
+         color: #FB1D5E;
+         background-color: transparent;
+         border: 2px solid #FB1D5E; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FB1D5E;
+              background-color: transparent;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px #FB1D5E inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.red-onoff { 
+         color: #FFFFFF;
+         background-color: #FB1D5E;
+         border: 2px solid #FB1D5E; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: transparent;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.blue-on { 
+         color: #FFFFFF;
+         background-color: #14A3E5;
+         border: 2px solid #14A3E5;
+         box-shadow: 0 0 40px 40px #14A3E5 inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #14A3E5;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.blue-off { 
+         color: #14A3E5;
+         background-color: transparent;
+         border: 2px solid #14A3E5; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #14A3E5;
+              background-color: transparent;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px #14A3E5 inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.blue-onoff { 
+         color: #FFF;
+         background-color: #14A3E5;
+         border: 2px solid #14A3E5; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #14A3E5;
+              background-color: transparent;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     
+}
+
+/**
+ * Card Module Colors
+ */
+        
+.cards {
+     h2.title {
+       color: #0D0912;
+       text-align: left;
+     }
+     a, a:hover { text-decoration: none; }
+}
+
+.card {   
+    .card-wrapper {                
+        .c-title { color: #FB1D5E; }
+        .c-image {}
+        .c-content { color: #0D0912; }
+    }
+}
+
+/**
+ * List Module Colors
+ */
+        
+.lists {
+     h2.title {
+       color: #0D0912;
+       text-align: left;
+     }
+     a, a:hover { text-decoration: none; }
+}
+
+.list {        
+    .list-wrapper {   
+            
+        .l-title { color: #FB1D5E; }
+         
+         .l-image {}
+        
+        .l-content { color: #0D0912; }
+    }
+           
+    &:nth-of-type(odd) {
+        background-color: #f4f4f4;
+    }
+}
+
+/**
+ * Block Module Colors
+ */
+        
+.blocks {
+     h2.title {
+       color: #0D0912;
+       text-align: left;
+     }
+     a, a:hover { text-decoration: none; }
+}
+
+.block {        
+    .block-wrapper {   
+            
+        .b-title { color: #FB1D5E; }
+         
+        .b-image {}
+        
+        .b-content { color: #0D0912; }
+    }
+           
+    &:nth-of-type(odd) {
+        background-color: #f4f4f4;
+    }
+}
